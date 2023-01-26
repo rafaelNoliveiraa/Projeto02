@@ -1,0 +1,27 @@
+<h1> PAGINA HOME </h1>
+
+<p> Nesta pagina é a home... </p>
+
+{{#mostrar}}
+<p> Nome: {{nome}} tem {{idade}} anos de idade </p>
+{{/mostrar}}
+
+<ul>
+{{#disciplinas}}
+<li>Nome: {{nome}} - Qtde: {{qt}} </li>
+{{/disciplinas}}
+</ul>
+
+<hr/>
+<ul>
+{{#frutas}}
+<li>{{.}}</li>
+{{/frutas}}
+</ul>
+
+<hr/>
+{{{teste}}}
+
+{{^frutas}}
+<p>Não existe frutas cadastradas</p>
+{{/frutas}} 
